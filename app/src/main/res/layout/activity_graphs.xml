@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/layout"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:background="#F8ECE0"
+tools:context="ua.kpi.comsys.iv7112.GraphsActivity" >
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#BC8F8F"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_graph"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:text="@string/gr"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:id="@+id/radio_diagram"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:text="@string/dia"
+            android:layout_weight="1" />
+    </RadioGroup>
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/graph"
+        android:layout_width="match_parent"
+        android:layout_height="458dp"
+        android:layout_marginTop="20dp"/>
+
+    <lecho.lib.hellocharts.view.PieChartView
+        android:id="@+id/diagram"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="458dp" />
+
+</LinearLayout>
